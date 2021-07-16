@@ -3,16 +3,16 @@ package org.example.chapter01;
 public class OopExample {
     public static void main(String[] args) {
         CalculatorService calculatorService = new CalculatorService(new Addition(), new Division());
-        final int additionResult = calculatorService.calculate(11, 1);
+        int additionResult = calculatorService.calculate(11, 1);
         System.out.println("additionResult = " + additionResult);
 
-        final int subtractionResult = calculatorService.calculate(11, 1);
+        int subtractionResult = calculatorService.calculate(11, 1);
         System.out.println("subtractionResult = " + subtractionResult);
 
-        final int multiplicationResult = calculatorService.calculate(11, 1);
+        int multiplicationResult = calculatorService.calculate(11, 1);
         System.out.println("multiplicationResult = " + multiplicationResult);
 
-        final int divisionResult = calculatorService.calculate(20, 4);
+        int divisionResult = calculatorService.calculate(20, 4);
         System.out.println("divisionResult = " + divisionResult);
     }
 }
