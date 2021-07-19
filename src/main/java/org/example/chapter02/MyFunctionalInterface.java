@@ -1,6 +1,7 @@
 package org.example.chapter02;
 
-@FunctionalInterface // 함수형 인터페이스임을 보장한다. Single Abstract Method(SAM) 보장
+@FunctionalInterface
+        // 함수형 인터페이스임을 보장한다. Single Abstract Method(SAM) 보장
 interface Function3<T1, T2, T3, R> {
     R apply(T1 t1, T2 t2, T3 t3);
 }
